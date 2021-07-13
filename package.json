@@ -1,0 +1,42 @@
+{
+  "name": "@posup/root",
+  "version": "1.0.0",
+  "description": "Monorepo de projetos da minha pós graduação",
+  "repository": "git@github.com:RafaelGiro/posup.git",
+  "author": "Rafael Giro <me@rafaelgiro.dev>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "preconstruct dev && manypkg check",
+    "build": "preconstruct build",
+    "release": "yarn build && changeset publish",
+    "test": "jest",
+    "clean": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist && rm -rf node_modules",
+    "lint": "yarn eslint .",
+    "dev:packages": "preconstruct watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.14.5",
+    "@changesets/cli": "^2.5.0",
+    "@manypkg/cli": "^0.10.0",
+    "@preconstruct/cli": "^1.1.4",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "typescript": "^4.3.5"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

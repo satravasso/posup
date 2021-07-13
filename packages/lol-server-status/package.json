@@ -1,0 +1,9 @@
+{
+  "name": "@posup/lol-server-status",
+  "version": "1.0.0",
+  "main": "dist/lol-server-status.cjs.js",
+  "module": "dist/lol-server-status.esm.js",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
+}
