@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "postinstall": "preconstruct dev && manypkg check",
@@ -16,7 +17,8 @@
     "test": "jest",
     "clean": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist && rm -rf node_modules",
     "lint": "yarn eslint .",
-    "dev:packages": "preconstruct dev"
+    "dev:packages": "preconstruct dev",
+    "start:js-ts": "cd packages/lol-server-status && yarn start"
   },
   "dependencies": {
     "@babel/core": "^7.8.4",

@@ -1,15 +1,15 @@
 {
-  "name": "@posup/lol-server-status",
-  "description": "Pacote com helpers para checar status dos servidores de LoL utilizando a API da Riot.",
+  "name": "@posup/js-ts",
+  "description": "Trabalho da disciplina Desenvolvimento Javascript e Typescript",
   "version": "1.0.0",
-  "main": "dist/lol-server-status.cjs.js",
-  "module": "dist/lol-server-status.esm.js",
   "scripts": {
     "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/index.ts\"",
     "start": "ts-node src/index.ts"
   },
   "dependencies": {
+    "@posup/lol-server-status": "1.0.0",
     "@posup/soixa": "1.0.0",
+    "dotenv": "^10.0.0",
     "ts-node": "^10.1.0"
   },
   "devDependencies": {
