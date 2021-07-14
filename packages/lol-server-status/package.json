@@ -1,9 +1,14 @@
 {
   "name": "@posup/lol-server-status",
+  "description": "Pacote com helpers para checar status dos servidores de LoL utilizando a API da Riot.",
   "version": "1.0.0",
   "main": "dist/lol-server-status.cjs.js",
   "module": "dist/lol-server-status.esm.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
   "dependencies": {
-    "react": "^16.12.0"
+    "@posup/soixa": "1.0.0",
+    "ts-node": "^10.1.0"
   }
 }

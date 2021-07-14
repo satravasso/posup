@@ -1,0 +1,14 @@
+{
+  "name": "@posup/soixa",
+  "description": "Pacote com uma API de interface para o fetch. Tentando recriar o axios.",
+  "version": "1.0.0",
+  "main": "dist/soixa.cjs.js",
+  "module": "dist/soixa.esm.js",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.11"
+  }
+}
