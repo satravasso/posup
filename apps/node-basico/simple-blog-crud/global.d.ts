@@ -1,4 +1,4 @@
-interface Blog {
+declare interface Blog {
   id: number;
   name: string;
   slug: string;
